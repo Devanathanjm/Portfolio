@@ -1,11 +1,16 @@
-import { RiReactjsLine } from "react-icons/ri";
-import { RiHtml5Fill } from "react-icons/ri";
-import { RiCss3Fill } from "react-icons/ri";
-import { RiJavascriptFill } from "react-icons/ri";
-import { RiBootstrapFill } from "react-icons/ri";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { DiSass } from "react-icons/di";
-import { DiMaterializecss } from "react-icons/di";
+import {
+  RiReactjsLine,
+  RiHtml5Fill,
+  RiCss3Fill,
+  RiJavascriptFill,
+  RiBootstrapFill,
+  RiTailwindCssFill,
+} from "react-icons/ri";
+import { DiMaterializecss, DiSass, DiWordpress  } from "react-icons/di";
+import { FaFigma } from "react-icons/fa";
+import { FaWebflow } from "react-icons/fa6";
+import { FiFramer } from "react-icons/fi";
+
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -91,6 +96,41 @@ const Technology = () => {
         >
           <RiReactjsLine className="text-7xl text-cyan-800" />
         </motion.div>
+        <motion.div
+          variants={iconVariants(2)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl p-4 border-4 border-neutral-800"
+        >
+          <FaFigma className="text-7xl text-pink-600" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(2.2)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl p-4 border-4 border-neutral-800"
+        >
+          <DiWordpress  className="text-7xl text-blue-700" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(2.4)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl p-4 border-4 border-neutral-800"
+        >
+          <FaWebflow className="text-7xl text-blue-500" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(2.6)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl p-4 border-4 border-neutral-800"
+        >
+          <FiFramer className="text-7xl text-black dark:text-white" />
+        </motion.div>
+       
       </div>
     </div>
   );
